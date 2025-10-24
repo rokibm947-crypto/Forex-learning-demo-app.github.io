@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://robibm347-crypto.github.io/Forex-learning-demo-app/sitemap.xml
