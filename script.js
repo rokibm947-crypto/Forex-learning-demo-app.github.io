@@ -39,9 +39,3 @@ function convertCurrency() {
   document.getElementById("conversionResult").innerText = 
   `Converted Amount = ${converted.toFixed(2)} ${currency.toUpperCase()}`;
 }
-
-
-  let converted = usd * rate;
-  document.getElementById("conversionResult").innerText = 
-  `Converted Amount = ${converted.toFixed(2)} ${currency.toUpperCase()}`;
-}
