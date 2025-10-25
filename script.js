@@ -1,6 +1,6 @@
 // Section switching
 function showSection(sectionId) {
-  const sections = ['home', 'learn', 'calculator', 'about'];
+  const sections = ['home', 'learn', 'calculator', 'converter','about'];
   sections.forEach(id => {
     document.getElementById(id).style.display = (id === sectionId) ? 'block' : 'none';
   });
@@ -19,4 +19,23 @@ function calculate() {
 
   let profit = (sell - buy) * qty;
   document.getElementById("result").innerText = "Your Profit/Loss = " + profit;
+}
+// Currency Converter
+function convertCurrency() {
+  let usd = parseFloat(document.getElementById("usdAmount").value);
+  let currency = document.getElementById("currency").value;
+  let rate;
+
+  if (isNaN(usd)) {
+    alert("Please enter a valid amount");
+    return;
+  }
+
+  switch(currency) {
+    case "bdt": rate = 118.5; break;
+  }
+
+  let converted = usd * rate;
+  document.getElementById("conversionResult").innerText = 
+  `Converted Amount = ${converted.toFixed(2)} ${currency.toUpperCase()}`;
 }
