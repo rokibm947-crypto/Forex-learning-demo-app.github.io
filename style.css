@@ -29,3 +29,11 @@ header nav button:hover {
 section {
   padding: 20px;
 }
+
+/* শুধুমাত্র মোবাইলের জন্য */
+@media only screen and (max-width: 768px) {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
